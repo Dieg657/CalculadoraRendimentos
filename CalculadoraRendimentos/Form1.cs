@@ -24,17 +24,35 @@ namespace CalculadoraRendimentos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double juros, valorInicial, cotacao, jurosCompostos;
-            int peridoTrabalho;
+            double juros, valorInicial, cotacao, jurosCompostos, resultado = 0;
+            int peridoTrabalho, qtdeOperacoes;
+            qtdeOperacoes = Convert.ToInt32(textBox7.Text);
             peridoTrabalho = Convert.ToInt32(textBox1.Text);
             juros = Convert.ToDouble(textBox5.Text);
             juros = juros / 100;
             valorInicial = Convert.ToDouble(textBox3.Text);
             cotacao = Convert.ToDouble(textBox2.Text);
-            jurosCompostos = valorInicial * Math.Pow((1 + juros), peridoTrabalho);
-            textBox6.Text = Convert.ToString(jurosCompostos); 
-            jurosCompostos = jurosCompostos * cotacao;
-            textBox4.Text = String.Format("{0:C}", jurosCompostos);
+            jurosCompostos = Math.Pow((1 + juros), peridoTrabalho);
+            if(qtdeOperacoes <= 1)
+            {
+                resultado = valorInicial * jurosCompostos;
+            }
+            else
+            {
+                if(qtdeOperacoes > 1)
+                {
+                    resultado = valorInicial * jurosCompostos;
+                    for (int i = 1; i < qtdeOperacoes; i++)
+                    {
+                        resultado = resultado * jurosCompostos;
+                    }
+                }
+            }
+            
+            textBox6.Text = Convert.ToString(resultado);
+            resultado = resultado * cotacao;
+            textBox4.Text = String.Format("{0:C}", resultado);
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -50,6 +68,11 @@ namespace CalculadoraRendimentos
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
             textBox5.Text = textBox5.Text.ToString().Replace(".", "");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
