@@ -22,39 +22,6 @@ namespace CalculadoraRendimentos
             textBox3.Text.ToString().Replace(".", "");
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            double juros, valorInicial, cotacao, jurosCompostos, resultado = 0;
-            int peridoTrabalho, qtdeOperacoes;
-            qtdeOperacoes = Convert.ToInt32(textBox7.Text);
-            peridoTrabalho = Convert.ToInt32(textBox1.Text);
-            juros = Convert.ToDouble(textBox5.Text);
-            juros = juros / 100;
-            valorInicial = Convert.ToDouble(textBox3.Text);
-            cotacao = Convert.ToDouble(textBox2.Text);
-            jurosCompostos = Math.Pow((1 + juros), peridoTrabalho);
-            if(qtdeOperacoes <= 1)
-            {
-                resultado = valorInicial * jurosCompostos;
-            }
-            else
-            {
-                if(qtdeOperacoes > 1)
-                {
-                    resultado = valorInicial * jurosCompostos;
-                    for (int i = 1; i < qtdeOperacoes; i++)
-                    {
-                        resultado = resultado * jurosCompostos;
-                    }
-                }
-            }
-            
-            textBox6.Text = Convert.ToString(resultado);
-            resultado = resultado * cotacao;
-            textBox4.Text = String.Format("{0:C}", resultado);
-            
-        }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text.ToString().Replace(".", "");
@@ -73,6 +40,51 @@ namespace CalculadoraRendimentos
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            double juros, valorInicial, cotacao, jurosCompostos, resultado = 0;
+            int peridoTrabalho, qtdeOperacoes;
+            qtdeOperacoes = Convert.ToInt32(textBox7.Text);
+            peridoTrabalho = Convert.ToInt32(textBox1.Text);
+            juros = Convert.ToDouble(textBox5.Text);
+            juros = juros / 100;
+            valorInicial = Convert.ToDouble(textBox3.Text);
+            cotacao = Convert.ToDouble(textBox2.Text);
+            jurosCompostos = Math.Pow((1 + juros), peridoTrabalho);
+            if (qtdeOperacoes <= 1)
+            {
+                resultado = valorInicial * jurosCompostos;
+            }
+            else
+            {
+                if (qtdeOperacoes > 1)
+                {
+                    resultado = valorInicial * jurosCompostos;
+                    for (int i = 1; i < qtdeOperacoes; i++)
+                    {
+                        resultado = resultado * jurosCompostos;
+                    }
+                }
+            }
+
+
+
+            if (checkBox1.Checked)
+            {
+                var Res = 0.0;
+                textBox4.Text = String.Format("{0:C}", resultado);
+                Res = resultado / cotacao;
+                textBox6.Text = Convert.ToString(Res);
+            }
+            else
+            {
+                var Res = 0.0;
+                textBox6.Text = Convert.ToString(resultado);
+                Res = resultado * cotacao;
+                textBox4.Text = String.Format("{0:C}", Res);
+            }
         }
     }
 }

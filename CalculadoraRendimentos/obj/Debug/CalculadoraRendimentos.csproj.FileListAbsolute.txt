@@ -18,3 +18,13 @@ C:\Users\Diego Soares\source\repos\CalculadoraDeRendimentos\CalculadoraRendiment
 C:\Users\Diego Soares\source\repos\CalculadoraDeRendimentos\CalculadoraRendimentos\obj\Debug\CalculadoraRendimentos.csproj.CoreCompileInputs.cache
 C:\Users\Diego Soares\source\repos\CalculadoraDeRendimentos\CalculadoraRendimentos\obj\Debug\CalculadoraRendimentos.exe
 C:\Users\Diego Soares\source\repos\CalculadoraDeRendimentos\CalculadoraRendimentos\obj\Debug\CalculadoraRendimentos.pdb
+C:\Users\Diego\Documents\Visual Studio 2017\CalculadoraRendimentos\CalculadoraRendimentos\bin\Debug\CalculadoraRendimentos.exe.config
+C:\Users\Diego\Documents\Visual Studio 2017\CalculadoraRendimentos\CalculadoraRendimentos\bin\Debug\CalculadoraRendimentos.exe
+C:\Users\Diego\Documents\Visual Studio 2017\CalculadoraRendimentos\CalculadoraRendimentos\bin\Debug\CalculadoraRendimentos.pdb
+C:\Users\Diego\Documents\Visual Studio 2017\CalculadoraRendimentos\CalculadoraRendimentos\obj\Debug\CalculadoraRendimentos.csprojResolveAssemblyReference.cache
+C:\Users\Diego\Documents\Visual Studio 2017\CalculadoraRendimentos\CalculadoraRendimentos\obj\Debug\CalculadoraRendimentos.Form1.resources
+C:\Users\Diego\Documents\Visual Studio 2017\CalculadoraRendimentos\CalculadoraRendimentos\obj\Debug\CalculadoraRendimentos.Properties.Resources.resources
+C:\Users\Diego\Documents\Visual Studio 2017\CalculadoraRendimentos\CalculadoraRendimentos\obj\Debug\CalculadoraRendimentos.csproj.GenerateResource.Cache
+C:\Users\Diego\Documents\Visual Studio 2017\CalculadoraRendimentos\CalculadoraRendimentos\obj\Debug\CalculadoraRendimentos.csproj.CoreCompileInputs.cache
+C:\Users\Diego\Documents\Visual Studio 2017\CalculadoraRendimentos\CalculadoraRendimentos\obj\Debug\CalculadoraRendimentos.exe
+C:\Users\Diego\Documents\Visual Studio 2017\CalculadoraRendimentos\CalculadoraRendimentos\obj\Debug\CalculadoraRendimentos.pdb
