@@ -189,9 +189,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(6, 45);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 13);
+            this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 23;
-            this.label3.Text = "Valor Inicial (US$)";
+            this.label3.Text = "Valor Inicial";
             // 
             // label2
             // 
@@ -284,10 +284,12 @@
             // 
             // textBox16
             // 
+            this.textBox16.BackColor = System.Drawing.SystemColors.HighlightText;
             this.textBox16.Location = new System.Drawing.Point(9, 137);
             this.textBox16.MaxLength = 3500000;
             this.textBox16.Multiline = true;
             this.textBox16.Name = "textBox16";
+            this.textBox16.ReadOnly = true;
             this.textBox16.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBox16.Size = new System.Drawing.Size(579, 135);
             this.textBox16.TabIndex = 17;
@@ -431,9 +433,9 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(3, 39);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(91, 13);
+            this.label9.Size = new System.Drawing.Size(61, 13);
             this.label9.TabIndex = 1;
-            this.label9.Text = "Valor Inicial (US$)";
+            this.label9.Text = "Valor Inicial";
             // 
             // label8
             // 
